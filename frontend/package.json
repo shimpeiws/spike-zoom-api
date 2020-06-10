@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.dev.js --env.ENV=local --progress --mode development"
+    "start": "webpack-dev-server --config ./webpack.config.dev.js --env.ENV=local --progress --mode development",
+    "build:dev": "webpack --config ./webpack.config.dev.js --progress --mode development"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0"
